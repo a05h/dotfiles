@@ -37,6 +37,7 @@ firefox_d     = "firefox -p develop"
 chrome        = "google-chrome"
 file_manager  = "thunar"
 text_editor   = "atom"
+git_manager   = "qgit"
 graphics      = "pinta"
 mail          = "thunderbird"
 torrent       = "deluge"
@@ -74,6 +75,7 @@ browser_menu = {
 
 dev_menu = {
   {"atom", text_editor},
+  {"qgit", git_manager},
   {"firefox -dev", firefox_d}}
 
 wine_menu = {
