@@ -63,6 +63,7 @@ if beautiful.wallpaper then
     end
 end
 
+--tags = { names = {"     ", "     ", "     ", "     "} }
 tags = { names = {"     ", "     ", "     ", "     "} }
 for s = 1, screen.count() do
    tags[s] = awful.tag(tags.names, s, tags.layout)
@@ -97,7 +98,9 @@ settings_menu = {
   {"pulse audio", vol_control}}
 
 system_menu = {
-  {"shutdown", sys_shutdown}}
+  {"shutdown", sys_shutdown},
+  { "wm -restart", awesome.restart },
+  { "wm -quit", awesome.quit }}
 
 mymainmenu = awful.menu({ items = { {"terminal", terminal},
                                     {"browser", browser_menu},
