@@ -37,7 +37,7 @@ firefox_d     = "firefox -p develop"
 chrome        = "google-chrome"
 file_manager  = "thunar"
 text_editor   = "atom"
-graphics      = "pinta"
+graphics      = "gimp"
 mail          = "thunderbird"
 torrent       = "deluge"
 music_player  = "exaile"
@@ -83,7 +83,7 @@ wine_menu = {
 tools_menu = {
   {"thunar", file_manager},
   {"exaile", music_player},
-  {"pinta", graphics},
+  {"gimp", graphics},
   {"thunderbird", mail},
   {"deluge", torrent},
   {"libreoffice -w", office_writer},
