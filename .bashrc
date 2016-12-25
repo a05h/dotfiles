@@ -18,7 +18,7 @@ alias cppapp="./a.out"
 alias srto="dnf search"
 alias inst="sudo dnf install"
 alias del="sudo dnf remove"
-alias upd="sudo dnf upgrade"
+alias upd="sudo dnf update"
 alias off="shutdown -h now"
 
 # Source global definitions

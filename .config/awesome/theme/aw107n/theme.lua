@@ -1,7 +1,7 @@
 theme                               = {}
 
 themes_dir                          = os.getenv("HOME") .. "/.config/awesome/theme/aw107n"
-theme.wallpaper                     = themes_dir .. "/wall-2.png"
+theme.wallpaper                     = themes_dir .. "/wall-1.png"
 theme.font                          = "Roboto 10"
 theme.fg_normal                     = "#8A8A8A"
 theme.fg_focus                      = "#D7D4D4"

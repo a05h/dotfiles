@@ -37,6 +37,7 @@ firefox_d     = "firefox -p develop"
 chrome        = "google-chrome"
 file_manager  = "thunar"
 text_editor   = "atom"
+qt_creator    = "qtcreator"
 graphics      = "gimp"
 mail          = "thunderbird"
 torrent       = "deluge"
@@ -62,7 +63,6 @@ if beautiful.wallpaper then
     end
 end
 
---tags = { names = {"     ", "     ", "     ", "     "} }
 tags = { names = {"     ", "     ", "     ", "     "} }
 for s = 1, screen.count() do
    tags[s] = awful.tag(tags.names, s, tags.layout)
@@ -75,6 +75,7 @@ browser_menu = {
 
 dev_menu = {
   {"atom", text_editor},
+  {"qt creator", qt_creator},
   {"firefox -dev", firefox_d}}
 
 wine_menu = {
@@ -119,7 +120,7 @@ mytextclock = lain.widgets.abase({
       local t_output = ""
       local o_it = string.gmatch(output, "%S+")
       for i=1,3 do t_output = t_output .. " " .. o_it(i) end
-      widget:set_markup(markup("#00D7FF", t_output) .. " " .. markup("#00D7FF", o_it(1)) .. " ")
+      widget:set_markup(markup("#16CDF0", t_output) .. " " .. markup("#16CDF0", o_it(1)) .. " ")
   end})
 
 baticon = wibox.widget.imagebox(beautiful.widget_battery)
