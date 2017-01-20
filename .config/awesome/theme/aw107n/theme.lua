@@ -2,7 +2,7 @@ theme                               = {}
 
 themes_dir                          = os.getenv("HOME") .. "/.config/awesome/theme/aw107n"
 theme.wallpaper                     = themes_dir .. "/wall-1.png"
-theme.font                          = "Roboto 10"
+theme.font                          = "Roboto Regular 10"
 theme.fg_normal                     = "#8A8A8A"
 theme.fg_focus                      = "#D7D4D4"
 theme.fg_urgent                     = "#CC9393"
@@ -22,7 +22,7 @@ theme.textbox_widget_margin_top     = 1
 theme.notify_fg                     = theme.fg_normal
 theme.notify_bg                     = theme.bg_normal
 theme.notify_border                 = theme.border_focus
-theme.awful_widget_height           = 14
+theme.awful_widget_height           = 16
 theme.awful_widget_margin_top       = 2
 theme.mouse_finder_color            = "#CC9393"
 

@@ -36,9 +36,10 @@ firefox_f     = "firefox -p free"
 firefox_d     = "firefox -p develop"
 chrome        = "google-chrome"
 file_manager  = "thunar"
-text_editor   = "atom"
+text_editor_1 = "brackets"
+text_editor_2 = "atom"
 qt_creator    = "qtcreator"
-graphics      = "gimp"
+graphics      = "pinta"
 mail          = "thunderbird"
 torrent       = "deluge"
 music_player  = "exaile"
@@ -74,7 +75,8 @@ browser_menu = {
   {"chrome", chrome}}
 
 dev_menu = {
-  {"atom", text_editor},
+  {"brackets", text_editor_1},
+  {"atom", text_editor_2},
   {"qt creator", qt_creator},
   {"firefox -dev", firefox_d}}
 
@@ -84,7 +86,7 @@ wine_menu = {
 tools_menu = {
   {"thunar", file_manager},
   {"exaile", music_player},
-  {"gimp", graphics},
+  {"pinta", graphics},
   {"thunderbird", mail},
   {"deluge", torrent},
   {"libreoffice -w", office_writer},
@@ -120,7 +122,7 @@ mytextclock = lain.widgets.abase({
       local t_output = ""
       local o_it = string.gmatch(output, "%S+")
       for i=1,3 do t_output = t_output .. " " .. o_it(i) end
-      widget:set_markup(markup("#16CDF0", t_output) .. " " .. markup("#16CDF0", o_it(1)) .. " ")
+      widget:set_markup(markup("#C4C4C4", t_output) .. " " .. markup("#C4C4C4", o_it(1)) .. " ")
   end})
 
 baticon = wibox.widget.imagebox(beautiful.widget_battery)
