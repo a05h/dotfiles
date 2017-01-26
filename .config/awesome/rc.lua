@@ -37,7 +37,7 @@ firefox_d     = "firefox -p develop"
 chrome        = "google-chrome"
 file_manager  = "thunar"
 text_editor_1 = "brackets"
-text_editor_2 = "atom"
+text_editor_2 = "gedit"
 qt_creator    = "qtcreator"
 graphics      = "pinta"
 mail          = "thunderbird"
@@ -56,7 +56,7 @@ local layouts = {
     awful.layout.suit.floating,
     awful.layout.suit.max,
     awful.layout.suit.tile,
-    awful.layout.suit.tile.bottom,}
+    awful.layout.suit.tile.bottom}
 
 if beautiful.wallpaper then
     for s = 1, screen.count() do
@@ -64,19 +64,20 @@ if beautiful.wallpaper then
     end
 end
 
-tags = { names = {"     ", "     ", "     ", "     "} }
+--tags = { names = {"     ", "     ", "     ", "     "} }
+tags = { names = {"   ", "   ", "   ", "   "} }
 for s = 1, screen.count() do
    tags[s] = awful.tag(tags.names, s, tags.layout)
 end
 
 browser_menu = {
-  {"firefox -secure", firefox_s},
-  {"firefox -free", firefox_f},
+  {"firefox -s", firefox_s},
+  {"firefox -f", firefox_f},
   {"chrome", chrome}}
 
 dev_menu = {
   {"brackets", text_editor_1},
-  {"atom", text_editor_2},
+  {"gedit", text_editor_2},
   {"qt creator", qt_creator},
   {"firefox -dev", firefox_d}}
 
@@ -122,7 +123,7 @@ mytextclock = lain.widgets.abase({
       local t_output = ""
       local o_it = string.gmatch(output, "%S+")
       for i=1,3 do t_output = t_output .. " " .. o_it(i) end
-      widget:set_markup(markup("#C4C4C4", t_output) .. " " .. markup("#C4C4C4", o_it(1)) .. " ")
+      widget:set_markup(markup("#D4D7D6", t_output) .. " " .. markup("#D4D7D6", o_it(1)) .. " ") --"C4C4C4"
   end})
 
 baticon = wibox.widget.imagebox(beautiful.widget_battery)
@@ -257,7 +258,7 @@ for s = 1, screen.count() do
     right_layout_add(volicon, volumewidget)
     right_layout_add(baticon, batwidget, spr)
     right_layout_add(mylayoutbox[s])
-    right_layout_add(mytextclock, spr)
+    right_layout_add(mytextclock)
     right_layout:add(spr)
 
     local layout = wibox.layout.align.horizontal()
