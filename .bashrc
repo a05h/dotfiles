@@ -16,6 +16,7 @@ alias gp="git push -u origin"
 alias nodeapp="node ./bin/www"
 alias cppapp="./a.out"
 alias ?repo="dnf search"
+alias ?find="find . -type f -name"
 alias install="sudo dnf install"
 alias delete="sudo dnf remove"
 alias update="sudo dnf update"
@@ -26,8 +27,9 @@ if [ -f /etc/bashrc ]; then
 fi
 
 trap 'printf "\e[0m" "$_"' DEBUG
-PS1=" \[\033[m\]/\[\033[30;1m\]\w \[\033[m\]> \e[0;36;2m"
+PS1=" \[\033[m\]/\[\033[30;1m\]\w \[\033[m\]> \e[0;34;1m"
 
 setxkbmap -model pc105 -layout pl,ru -option grp:alt_shift_toggle
 xkbcomp $DISPLAY - | egrep -v "group . = AltGr;" | xkbcomp - $DISPLAY
 tput reset
+cd /
