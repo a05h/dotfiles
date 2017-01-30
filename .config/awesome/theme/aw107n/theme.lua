@@ -1,7 +1,7 @@
 theme                               = {}
 
-theme.confdir                       = os.getenv("HOME") .. "/.config/awesome/themes/multicolor"
-theme.wallpaper                     = theme.confdir .. "/wall-3.png"
+theme.confdir                       = os.getenv("HOME") .. "/.config/awesome/theme/aw107n"
+theme.wallpaper                     = theme.confdir .. "/wall-18.png"
 
 theme.font                          = "Ubuntu Mono 10"
 --theme.taglist_font                =
