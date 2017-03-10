@@ -1,7 +1,7 @@
 theme                               = {}
 
 theme.confdir                       = os.getenv("HOME") .. "/.config/awesome/theme/aw107n"
-theme.wallpaper                     = theme.confdir .. "/wall-18.png"
+theme.wallpaper                     = theme.confdir .. "/wall-36.png"
 
 theme.font                          = "Ubuntu Mono 10"
 --theme.taglist_font                =
@@ -10,7 +10,7 @@ theme.menu_bg_focus                 = "#00000000"
 theme.bg_normal                     = "#00000000"
 theme.bg_focus                      = "#00000000"
 theme.bg_urgent                     = "#000000"
-theme.fg_normal                     = "#8e8e8e"
+theme.fg_normal                     = "#4e4e4e" --#8e8e8e
 theme.fg_focus                      = "#D4D7D6"
 theme.fg_urgent                     = "#af1d18"
 theme.fg_minimize                   = "#ffffff"
@@ -35,16 +35,9 @@ theme.menu_bg_normal                = "#111219"
 theme.menu_bg_focus                 = "#111219"
 
 theme.submenu_icon                  = theme.confdir .. "/icons/submenu.png"
-theme.widget_note                   = theme.confdir .. "/icons/note.png"
-theme.widget_note_on                = theme.confdir .. "/icons/note_on.png"
 
 theme.taglist_squares_sel           = theme.confdir .. "/icons/square_sel.png"
 theme.taglist_squares_unsel         = theme.confdir .. "/icons/square_unsel.png"
-
-theme.tasklist_disable_icon         = true
-theme.tasklist_floating             = ""
-theme.tasklist_maximized_horizontal = ""
-theme.tasklist_maximized_vertical   = ""
 
 theme.widget_vol_max                = theme.confdir .. "/icons/vol_max.png"
 theme.widget_vol_mid                = theme.confdir .. "/icons/vol_mid.png"
@@ -62,6 +55,12 @@ theme.layout_tile                   = theme.confdir .. "/icons/tile.png"
 theme.layout_tilebottom             = theme.confdir .. "/icons/tilebottom.png"
 theme.layout_max                    = theme.confdir .. "/icons/max.png"
 theme.layout_floating               = theme.confdir .. "/icons/floating.png"
+
+theme.tasklist_disable_icon         = true
+theme.tasklist_floating             = ""
+theme.tasklist_maximized_horizontal = ""
+theme.tasklist_maximized_vertical   = ""
+
 
 
 return theme
