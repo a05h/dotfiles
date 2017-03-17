@@ -33,3 +33,4 @@ setxkbmap -model pc105 -layout pl,ru -option grp:alt_shift_toggle
 xkbcomp $DISPLAY - | egrep -v "group . = AltGr;" | xkbcomp - $DISPLAY
 tput reset
 cd /
+
