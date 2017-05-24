@@ -1,16 +1,15 @@
 theme                               = {}
 
 theme.confdir                       = os.getenv("HOME") .. "/.config/awesome/theme/aw107n"
-theme.wallpaper                     = theme.confdir .. "/wall-46.png"
+theme.wallpaper                     = theme.confdir .. "/wall-50.png"
 
 theme.font                          = "Ubuntu Mono 10"
---theme.taglist_font                =
 theme.menu_bg_normal                = "#00000000"
 theme.menu_bg_focus                 = "#00000000"
 theme.bg_normal                     = "#00000000"
 theme.bg_focus                      = "#00000000"
 theme.bg_urgent                     = "#00000000"
-theme.fg_normal                     = "#4e4e4e" --#8e8e8e
+theme.fg_normal                     = "#9f9f9f"
 theme.fg_focus                      = "#D4D7D6"
 theme.fg_urgent                     = "#af1d18"
 theme.fg_minimize                   = "#ffffff"
@@ -60,7 +59,5 @@ theme.tasklist_disable_icon         = true
 theme.tasklist_floating             = ""
 theme.tasklist_maximized_horizontal = ""
 theme.tasklist_maximized_vertical   = ""
-
-
 
 return theme
